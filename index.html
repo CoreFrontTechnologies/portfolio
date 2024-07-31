@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayyeed's Portfolio website </title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- this is the header code -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/my logo.png" class="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front End Developer</p>
+                <h1>Hi I'm <span>Sayyeed </span> <br> Muhammad from Nigeria</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- i`m the header end -->
+
+
+    <!-- ----------------About section here----- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/imga.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me </h1>
+                    <p>Hello! I'm Sayyeed Muhammad, a passionate front-end developer with 1 year of experience in
+                        creating visually appealing and user-friendly web interfaces. I specialize in crafting clean,
+                        efficient, and responsive designs that enhance the user experience.
+
+                        As the owner of CoreFront Technologies, I lead a team committed to delivering top-notch
+                        front-end development services. My expertise lies in HTML, CSS, and JavaScript, and I
+                        continually strive to stay updated with the latest trends and technologies in the field.
+
+                        In addition to my professional work, I founded EduStack Hub, a growing community focused on full
+                        stack development. EduStack Hub provides valuable resources, variables, and educational
+                        materials to help aspiring developers advance their skills and knowledge.
+
+                        Through my work with CoreFront Technologies and EduStack Hub, I aim to blend creativity with
+                        technical proficiency to build websites that not only look great but also perform seamlessly.
+                        I'm excited to collaborate with clients and peers to create innovative solutions that stand out.
+
+                        Thank you for visiting my portfolio. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+
+                            <li> <span>UI/UX</span> <br> Designing Web/App Interfaces</li>
+                            <li> <span>Web Development</span> <br> Web App Development</li>
+                            <li><span>App Development</span> <br> Building Android/iOS Apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+
+                            <li> <span>2024 - Current</span> <br> UI/UX design training at ET institute</li>
+                            <li> <span>2018 - 2024</span> <br> Founding Engineer at Hiredlance Digitals</li>
+                            <li><span>2016 - 2017</span> <br> Web Developer at Millard Fuller Foundation</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+
+                            <li> <span>2014 </span> <br> Bachelors from UNN</li>
+                            <li> <span> 2016 </span> <br> Web development/Cybersecurity Training from Udacity</li>
+                            <li><span>2024</span> <br> Msc Cybersecurity from NSUK</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- this is the end of the about section -->
+
+
+
+    <!-- ---------------Services starting------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services </h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. </p>
+                    <a href="#"> Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. </p>
+                    <a href="#"> Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. </p>
+                    <a href="#"> Learn more</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- services ends -->
+
+
+
+
+    <!-- --------------Portfolio starts---------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work </h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg" alt="">
+
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to talented people across the world. Download it from PlayStore</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-2a.jpg" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to talented people across the world. Download it from PlayStore</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.jpg" alt="">
+
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to talented people across the world. Download it from PlayStore</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See more </a>
+        </div>
+    </div>
+
+    <!-- ends -->
+
+
+
+    <!-- ---------------Contact started----------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>technologiescorefront@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+2348069613311</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Sayyeed Muhammad  - Community Manager .pdf" download class="btn btn2">Download CV
+                    </a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- contact finished -->
+
+        <!-- footer here -->
+        <div class="copyright">
+            <p>Copyright © Sayyeed Muhammad. Made with <i class="fa-solid fa-heart"></i> by Core Front Technologies
+            </p>
+        </div>
+
+        <!-- finished -->
+
+    </div>
+
+    <!-- this is the end of the web -->
+
+    <script src="javascript/script.js">
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz1kY7r3BMCsdrPgAeb2rBodr09p212aGpqIOLsOmjR9NdVsV1wea6oqvvJBD6XU-iQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
